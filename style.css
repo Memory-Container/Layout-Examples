@@ -151,13 +151,12 @@ ul li {
     font-size: 14px;
     font-weight: 600;
     color: #8b8b8b;
-    transition: 0.3s;
+    transition: 0.3s cubic-bezier(0, 0.74, 0, 1.13);
 }
 .style4 ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.3s;
     padding: 8px 22.75px;
 }
 .style5 ul li, .style6 ul li, .style7 ul li, .style8 ul li {
@@ -165,7 +164,6 @@ ul li {
     flex-direction: row;
     gap: 5px;
     align-items: center;
-    transition: 0.3s cubic-bezier(0, 0.74, 0, 1.13);
 }
 .style1 ul li.active, .style3 ul li.active, .style4 ul li.active, .style5 ul li.active, .style6 ul li.active, .style7 ul li.active, .style8 ul li.active {
     color: #0088ff;
