@@ -1,0 +1,235 @@
+.layout2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.layout2 .inner-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px   ;
+    flex-wrap: wrap;
+    max-width: 650px;
+    gap: 20px;
+}
+.input-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.x {
+    cursor: pointer;
+}
+.x:hover {
+    color: #0088ff;
+}
+.type {
+    border-left: 3px solid transparent;
+    font-size: 16px;
+    border-image: linear-gradient(to bottom, rgb(0, 76, 255), rgb(153, 0, 255)) 1;
+    border-image-slice: 1;
+    padding: 4px 0 4px 5px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+}
+label {
+    color: rgb(52, 52, 52);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    position: relative;
+}
+input, select {
+    outline: 0;
+    border: 0;
+}
+textarea {
+    resize: none;
+    min-width: 300px;
+    min-height: 75px;
+    outline: 0;
+    padding: 8px 10px 8px 10px;
+    border-radius: 7px;
+    border: 2px solid rgb(197, 197, 197);
+    min-width: 300px;
+}
+input.true-input {
+    outline: 0;
+    padding: 8px 5px 8px 32px;
+    border-radius: 7px;
+    border: 2px solid rgb(197, 197, 197);
+    min-width: 300px;
+}
+input.no-icon {
+    padding: 8px 10px;
+}
+input[type="password"] {
+    letter-spacing: 5px;
+}
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+    color: gray;
+}
+input[type="date" i]::-webkit-calendar-picker-indicator {
+    width: 20px;
+    height: 20px;
+    background: url("");
+    background-color: #8b8b8b;
+    -webkit-mask: url(/assets/svg/input-calendar.svg) no-repeat center;
+    mask: url(/assets/svg/input-calendar.svg) no-repeat center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    padding: 0;
+}
+#add-user {
+    flex: 1;
+}
+.fake-input {
+    border-radius: 7px;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid rgb(197, 197, 197);
+    background-color: white;
+    transition: 0.3s;
+    min-width: 300px;
+    font-weight: 500;
+    max-height: 34.91px;
+    max-width: 300px;
+}
+.fake-input input {
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+}
+.line.left {
+    width: 0;
+    height: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-left: 3px;
+}
+.line.right {
+    width: 0;
+    height: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 3px;
+}
+.line.even {
+    width: 0;
+    height: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.fake-input:focus-within, input.true-input:focus, textarea:focus {
+    border-color: #1bbeff;
+    box-shadow: 0 0 0 2px rgba(58, 153, 237, 0.2);
+    transition: 0.3s;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.input-container .icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+.add-user {
+    position: relative;
+}
+.user-selected {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    border: 1px solid;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.user-img {
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+.dropdown {
+    width: 100%;
+    max-height: 150px;
+    overflow-y: scroll;
+    display: none;
+    flex-direction: column;
+}
+.dropdown .user {
+    border-radius: 0;
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: white;
+    position: relative;
+    transition: 0.3s;
+}
+.dropdown .user:hover {
+    background-color: rgb(190, 190, 190);
+}
+.input-person {
+    --icon-url: url(/assets/svg/input-person.svg);
+}
+.input-lock {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    --icon-url: url(/assets/svg/input-lock.svg);
+}
+.input-search {
+    --icon-url: url(/assets/svg/input-search.svg);
+}
+.input-cc {
+    --icon-url: url(/assets/svg/input-credit-card.svg);
+}
+.input-copy {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    --icon-url: url(/assets/svg/copy.svg);
+}
+.eyeIcon {
+    display: none;
+    right: 10px;
+    left: unset !important;
+}
+.input-eye-unreveal {
+    --icon-url: url(/assets/svg/input-reveal.svg);
+}
+.input-eye-reveal {
+    --icon-url: url(/assets/svg/input-unreveal.svg);
+}

@@ -1,0 +1,101 @@
+.layout3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.layout3 .inner-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px   ;
+    flex-wrap: wrap;
+    max-width: 650px;
+    gap: 120px;
+}
+.layout3 button {
+    width: 246px;
+    height: 52px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #3a83f6;
+    color: #eef2ff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.layout3 button img {
+    filter: invert(1);
+}
+.layout3 .style2 {
+    box-shadow: 0 10px 25px #3a82f66f;
+}
+.layout3 .style3 {
+    border-radius: 0;
+}
+.layout3 .style4 {
+    position: relative;
+    border-radius: 8px;
+}
+.layout3 .style4::before {
+    content: "";
+    min-width: 246px;
+    min-height: 52px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 3px solid transparent;
+    background: linear-gradient(45deg,#a9caff,rgb(211, 138, 242)) border-box;
+    mask:
+        linear-gradient(#ffffff 0 0) padding-box, 
+        linear-gradient(#ff0000 0 0);
+    mask-composite: exclude;
+    border-radius: 8px;
+    opacity: 1;
+}
+.layout3 .style5 {
+    border-radius: 40px;
+}
+.layout3 .style6 {
+    border-radius: 10px;
+    position: relative;
+}
+.layout3 .style6::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    border: 4px solid transparent;
+    background: #a9caff border-box;
+    mask:
+        linear-gradient(#ffffff 0 0) padding-box, 
+        linear-gradient(#ff0000 0 0);
+    mask-composite: exclude;
+    border-radius: 10px;
+    opacity: 1;
+}
+.layout3 .style7 {
+    box-shadow: 0 0 0 4px rgb(233, 233, 233), 0 0 0 6px #3a83f6
+}
+.layout3 .style8 {
+    border-radius: 12px;
+    background: linear-gradient(100deg, #418aff, rgb(157, 71, 255));
+}
+.layout3 .style9 {
+    border-radius: 12px;
+}
+.layout3 .style9 i {
+    font-size: 23px;
+}
+.layout3 .style10 {
+    background: url(https://component-large-button.vercel.app/Group.svg);
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 0;
+}

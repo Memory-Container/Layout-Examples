@@ -1,0 +1,177 @@
+.layout5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.layout5 .inner-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.layout5 .inner-layout {
+    position: relative;
+}
+.layout5 .input-container {
+    position: relative;
+    width: 300px;
+    transition: 0.3s;
+}
+.layout5 .input-container.style1
+{
+    --color: rgb(87, 87, 87);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 4px 16px;
+    border: 2px solid var(--color);
+    background-color: white;
+    color: var(--color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.layout5 .input-container.style1:focus-within, 
+.layout5 .input-container.style4:focus-within {
+    --color: rgb(0, 141, 211);
+    background-color: #a6e1ff30;
+    transition: 0.3s;
+}
+.layout5 input {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;
+    color: rgb(87, 87, 87);
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.layout5 input.true-input {
+    outline: 0;
+    padding: 8px 5px 8px 38px;
+    border: 0;
+    min-width: unset;
+    width: 98%;
+    height: 44.37px;
+}
+.layout5 input.true-input:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: unset;
+    transition: 0.3s;
+}
+.layout5 .input-layout.style2 span,
+.layout5 .input-layout.style3 span,
+.layout5 .input-layout.style4 span,
+.layout5 .input-layout.style5 span,
+.layout5 .input-layout.style7 span,
+.layout5 .input-layout.style8 span
+ {
+    position: absolute;
+    top: -18px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    font-size: 12px;
+    transition: 0.3s;
+}
+.layout5 .input-layout.style2 .input-container {
+    --color: rgb(87, 87, 87);
+    border-bottom: 2px solid var(--color);
+    height: 100%;
+    transition: 0.3s;
+}
+.layout5 .input-layout .input-container:focus-within {
+    --color: rgb(0, 141, 211);
+}
+.layout5 .input-layout .input-container .icon {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+    left: 12px;
+}
+.layout5 .input-layout .input-container:focus-within .icon {
+    --color: rgb(0, 141, 211);
+    background: var(--color);
+    transition: 0.3s;
+}
+.layout5 .input-layout:focus-within span {
+    --color: rgb(0, 141, 211);
+    color: var(--color);
+}
+.layout5 .input-layout.style3 .input-container input.true-input,
+.layout5 .input-layout.style4 .input-container input.true-input,
+.layout5 .input-layout.style5 .input-container input.true-input,
+.layout5 .input-layout.style6 .input-container input.true-input,
+.layout5 .input-layout.style7 .input-container input.true-input,
+.layout5 .input-layout.style8 .input-container input.true-input
+{
+    --color: rgb(87, 87, 87);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    border: 2px solid var(--color);
+    background-color: white;
+    color: var(--color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.layout5 .input-layout.style5 .input-container input.true-input {
+    border-radius: 0;
+}
+.layout5 .input-layout.style5 .input-container input.true-input:focus {
+    --color: rgb(0, 141, 211);
+    border-radius: 0;
+}
+.layout5 .input-layout.style3 .input-container input.true-input:focus {
+    --color: rgb(0, 141, 211);
+    background-color: #a6e1ff30;
+}
+.layout5 .input-layout.style4 .input-container input.true-input:focus {
+    --color: rgb(0, 141, 211);
+    box-shadow: 0 0 1px 1.5px rgba(0, 141, 211, 0.371);
+}
+.layout5 .input-layout.style6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    width: 300px;
+}
+.layout5 .input-layout.style6 .input-container {
+    min-width: unset;
+    max-width: unset;
+    flex: 1;
+}
+.layout5 .input-layout.style6 .input-container input.true-input {
+    padding: 0px 16px;
+}
+.layout5 .input-layout.style6 .input-container input.true-input:focus {
+    --color: rgb(0, 141, 211);
+    box-shadow: 0 0 15px rgba(0, 141, 211, 0.2);
+}
+.layout5 .input-layout.style8 .input-container input.true-input:focus {
+    --color: rgb(0, 141, 211);
+    box-shadow: 0 0 0px 2px rgba(0, 141, 211, 0.371);
+}
+.layout5 .input-layout.style6 span {
+    color: rgb(87, 87, 87);
+    transition: 0.3s;
+}
+.layout5 .input-layout.style6:focus-within span {
+    color: rgb(0, 141, 211);
+}
+.layout5 .input-layout.style7 span {
+    top: -6.8px;
+    left: 18px;
+    background: linear-gradient(transparent 50%, white 50%);
+    z-index: 9;
+    padding: 0 3px;
+}
