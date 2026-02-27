@@ -273,6 +273,7 @@ ul li.active .icon {
     flex-direction: row;
     gap: 25px;
     bottom: 20px;
+    z-index: 9999;
 }
 .control button {
     scale: 1.5;

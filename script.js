@@ -169,3 +169,10 @@ function move(direction) {
         main.style.top = parseInt(main.style.top.match(/-?\d+/)[0]) - 100 + "vh"
     }
 }
+let input = document.querySelector('.input-container.style1')
+let input2 = document.querySelector('.input-container.style1 input')
+input.addEventListener("click", (e) => {
+    e.preventDefault()
+    e.stopPropagation();
+    input2.focus()
+})

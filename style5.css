@@ -76,6 +76,8 @@
     color: rgb(87, 87, 87);
     font-size: 12px;
     transition: 0.3s;
+    pointer-events: none;
+    user-select: none;
 }
 .layout5 .input-layout.style2 .input-container {
     --color: rgb(87, 87, 87);
@@ -116,9 +118,10 @@
     font-size: 13px;
     border: 2px solid var(--color);
     background-color: white;
-    color: var(--color);
+    color: rgb(87, 87, 87);
     border-radius: 10px;
     transition: 0.3s;
+
 }
 .layout5 .input-layout.style5 .input-container input.true-input {
     border-radius: 0;
